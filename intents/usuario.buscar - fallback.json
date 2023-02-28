@@ -1,0 +1,46 @@
+{
+  "id": "ed85825f-5432-4c2a-a8f9-8b846a2ccc16",
+  "name": "usuario.buscar - fallback",
+  "auto": false,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "infos-dados",
+    "usuariobuscar-followup"
+  ],
+  "contexts": [
+    "infos-dados",
+    "usuariobuscar-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": true,
+  "liveAgentHandoff": false,
+  "parentId": "a51279e6-bb53-4cf7-94ab-12cf7389f4f5",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "usuariobuscar.usuariobuscar-fallback",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "CEP deve conter apenas números, por favor informe novamente."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "a51279e6-bb53-4cf7-94ab-12cf7389f4f5",
+  "templates": [],
+  "userSays": [],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

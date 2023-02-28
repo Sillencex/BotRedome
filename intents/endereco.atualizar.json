@@ -1,0 +1,230 @@
+{
+  "id": "fabf9c51-87b0-4926-8dd2-cb82d32b1c3a",
+  "name": "endereco.atualizar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "infos-dados"
+  ],
+  "contexts": [
+    "infos-dados"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "infos-dados",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "cep",
+          "dataType": "@sys.zip-code",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "CEP incorreto, por favor informe novamente"
+          ],
+          "value": "$cep",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "numero",
+          "dataType": "@sys.number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe o numero da residência"
+          ],
+          "value": "$numero",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "complemento",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe o complemento"
+          ],
+          "value": "$complemento",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "#infos-dados.nome",
+          "name": "nome",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$nome",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "#infos-dados.nome_mae",
+          "name": "nome_mae",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$nome_mae",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "#infos-dados.data_nascimento",
+          "name": "data_nascimento",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$data_nascimento",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "#infos-dados.cpf",
+          "name": "cpf",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$cpf",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "32310-210",
+          "userDefined": true,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "2965d4fe-6e17-42d3-a824-eaaf9e9d4ea9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "32310210",
+          "userDefined": true,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "dc00090c-19f2-4e9d-8718-cd71ef57f4e4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "06542-089",
+          "userDefined": false,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "8dab656f-2203-4d57-8cdd-bc6288810bda",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "06542089",
+          "userDefined": false,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "9667eca4-c9d4-4b39-bcf6-ed26a031d49f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "93228-170",
+          "userDefined": true,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "55b430ea-9d90-46e4-898f-a9d01fcccae4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "93228170",
+          "userDefined": false,
+          "alias": "cep",
+          "meta": "@sys.zip-code"
+        }
+      ],
+      "count": 0,
+      "id": "e288bf7f-cca9-412d-baf7-6243f7e639e3",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

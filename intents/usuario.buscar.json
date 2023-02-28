@@ -1,0 +1,121 @@
+{
+  "id": "a51279e6-bb53-4cf7-94ab-12cf7389f4f5",
+  "name": "usuario.buscar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "infos-dados",
+          "lifespan": 5
+        },
+        {
+          "name": "usuariobuscar-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "nome",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe o nome:"
+          ],
+          "value": "$nome",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "nome_mae",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe o nome da mãe"
+          ],
+          "value": "$nome_mae",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "data_nascimento",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe a data de nascimento"
+          ],
+          "value": "$data_nascimento",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "cpf",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Informe o CPF"
+          ],
+          "value": "$cpf",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Buscar cadastro",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ae01f827-3c40-4b51-af41-32e6a911488d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
